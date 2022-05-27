@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Chapaza';
+    src: url(../Chapaza.ttf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #D45749;
+    width: 100%;
+    min-height: 600px;
+    height: 80vh;
+}
+
+header h1 {
+    font-family: 'Chapaza', serif;
+    color: #FFF;
+    font-weight: normal;
+    font-size: 96px;
+    margin-left: 150px;
+    position: relative;
+    top: 10%;
+    width: 400px;
+    line-height: 1.4;
+}
+
+header h1 span {
+    color: #FFBE82;
+}
+
+nav {
+    display: flex;
+    padding: 40px 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 30px;
+    font-family: 'Merriweather', serif;
+}
+
+.gallery {
+    width: 100%;
+    margin: auto;
+    margin-top: -10vh;
+    margin-bottom: -10vh;
+}
+
+.gallery img {
+    box-sizing: content-box;
+    width: 25%;
+    height: 500px;
+    object-fit: cover;
+    margin-left: 6.25%;
+    margin-top: 20px;
+}
+
+section.about {
+    background-color: #212e36;
+    color: white;
+    text-align: center;
+    padding: 50px 120px;
+    padding-top: 10vh;
+    z-index: -1;
+    height: 50vh;
+}
+
+.about h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Chapaza';
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.about p {
+    margin-top: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        min-height: 400px;
+        height: 400px;
+    }
+
+    header h1 {
+        font-size: 64px;
+        text-align: center;
+        position: static;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin: auto;
+    }
+
+    .gallery {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .gallery img {
+        width: 40%;
+        height: 500px;
+    }
+
+    section.about {
+        padding: 10px 70px;
+        height: auto;
+    }
+
+    .about p {
+        margin: 20px auto 40px auto;
+    }
+
+  }
+
+  @media only screen and (max-width: 480px) {
+      
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+    }
+    
+    .gallery img {
+        width: 80%;
+        margin-left: 10%;
+        height: 500px;
+        padding-top: 20px;
+    }
+
+  }
