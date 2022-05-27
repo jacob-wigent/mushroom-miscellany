@@ -3,7 +3,9 @@
     src: url(../Chapaza.ttf);
 }
 
-
+body {
+    overflow-x: hidden;
+}
 
 * {
     margin: 0;
